@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 PAGE NOT FOUND</title>
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>404 PAGE NOT FOUND</h1><br>
-    <p>The page you are looking for does not exist.</p><br>
-    <p>Please try again later.</p><br>
-    <a href="Index.html">Bypass to Index.html</a><br>
-    <a href="https://githubstatus.com/">GitHub Status</a>
-    <a href="https://twitter.com/githubstatus">@githubstatus</a>
-    <footer>
-        <a href="https://github.com">GitHub</a>
-    </footer>
+    <div class="app-shell">
+        <header class="hero">
+            <p class="eyebrow">404 Error</p>
+            <h1>Page not found</h1>
+            <p class="subtitle">The page you're looking for does not exist or may have moved.</p>
+        </header>
+
+        <main class="links-grid" aria-label="Error actions">
+            <a class="link-card" href="index.html" aria-label="Back to dashboard">
+                <span>Back to dashboard</span>
+            </a>
+
+            <a class="link-card" href="https://githubstatus.com/" target="_blank" rel="noopener noreferrer" aria-label="Check GitHub Status">
+                <span>GitHub Status</span>
+            </a>
+        </main>
+    </div>
 </body>
 </html>

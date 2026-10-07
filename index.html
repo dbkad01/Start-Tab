@@ -3,37 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <meta name="description" content="StandBy Dashboard - your quick start page for daily web tools.">
+    <title>StandBy Dashboard</title>
     <link rel="icon" href="icon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>StandBy Dashboard</h1>
-        <p>Welcome to the StandBy Dashboard. This is a placeholder page for the main content.</p>
-        <form action="https://www.google.com/search" method="GET" target="_blank">
-            <input type="text" name="q" placeholder="type to search">
-            <input type="submit" value="Search">
-        </form>
-    </header>
-    <main>
-        <article>
-            <a href="https://github.com">
-                <img src="https://cdn-icons-png.flaticon.com/512/1051/1051326.png" alt="GitHub Logo">
+    <div class="app-shell">
+        <header class="hero">
+            <p class="eyebrow">Welcome back</p>
+            <h1>StandBy Dashboard</h1>
+            <p class="subtitle">Your launchpad for the places you visit most.</p>
+
+            <form class="search-form" action="https://www.google.com/search" method="GET" target="_blank" aria-label="Search the web">
+                <label class="sr-only" for="search-query">Search the web</label>
+                <input id="search-query" type="search" name="q" placeholder="Search the web..." autocomplete="off">
+                <button type="submit">Search</button>
+            </form>
+        </header>
+
+        <main class="links-grid" aria-label="Quick links">
+            <a class="link-card" href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub">
+                <img src="https://cdn-icons-png.flaticon.com/512/1051/1051326.png" alt="GitHub logo">
+                <span>GitHub</span>
             </a>
-            <a href="https://www.youtube.com/">
-                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube Logo">
+
+            <a class="link-card" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="Open YouTube">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube logo">
+                <span>YouTube</span>
             </a>
-            <a href="https://www.reddit.com/">
-                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Reddit Logo">
+
+            <a class="link-card" href="https://www.reddit.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Reddit">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Reddit logo">
+                <span>Reddit</span>
             </a>
-            <a href="https://www.instagram.com/">
-                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram Logo">
+
+            <a class="link-card" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384061.png" alt="Instagram logo">
+                <span>Instagram</span>
             </a>
-        </article>
-        <footer>
-            <p>© 2024 StandBy Dashboard. All rights reserved.</p>
+        </main>
+
+        <footer class="site-footer">
+            <p>© 2024 StandBy Dashboard. Built for quick access.</p>
         </footer>
-    </main>
+    </div>
 </body>
 </html>
